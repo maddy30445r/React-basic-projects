@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Helvetica Neue";
+
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.main{
+  margin-top: 20vh;
+  width: 80vw;
+  height: 50vh;
+
+}
+
+.tabarea{
+  display: flex;
+ width: 300px;
+  
+  padding: 10px;
+  justify-content: space-between;
+  padding-left:5px;
+  
+  
+  }
+  .tab{
+  background-color: rgba(128, 0, 128, 0.679);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.selected{
+  background-color: purple;
+  border: 2px solid black;
+  text-decoration: underline;
+  /* text-decoration-line: underline; */
+  
+}
+.tabparent{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+.tabcontent{
+  position: relative;
+  padding: 5px 10px;
+  background-color: rgba(128, 0, 128, 0.367);
+  height: 100%;
+  font-weight: 700;
+  word-wrap: break-word;
+  color: rgb(76, 0, 76);
+  border-radius: 10px;
+  box-shadow: -8px 8px 20px rgba(164, 161, 161, 0.808);
+
+}
+.tabcontent h1{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black;
+
+  
+}
+.tabcontent .detsshow{
+
+  font-size: .8rem;
+  font-weight: 500;
+  text-decoration: underline;
+   position: absolute;
+   margin-top: 1rem;
+  cursor: pointer;
+}
+.tabcontent .heart{
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  cursor: pointer;
+  display: flex; 
+  gap: 10px;
+  align-items: center;
+}
+
+.tabcontent .heart span{
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+
+}
+@media (max-width: 450px) {
+  
+    .main{
+      margin-top: 15vh;
+      width: 90vw;
+      height: 50vh;
+    
+    }
+    .tabcontent{
+      padding: 5px 10px;
+      background-color: rgba(128, 0, 128, 0.367);
+      height: 100%;
+      font-weight: 700;
+
+      font-size: .8em;
+      word-wrap: break-word;
+      color: rgb(76, 0, 76);
+    
+    }
+
+  
+}
+
