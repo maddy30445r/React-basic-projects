@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.userlist::-webkit-scrollbar{
+ 
+  width: 5px;
+  
+ 
+ 
+  /* height: 10px; */
+  
+}
+.userlist::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: #f3ce9e;
+  height: 10px;
+}
+.user::-webkit-scrollbar-track{
+  background: transparent;
+}
+.userlist::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px; 
+}
+.userlist::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 10px;
+}
